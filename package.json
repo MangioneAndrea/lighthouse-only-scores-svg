@@ -1,0 +1,23 @@
+{
+  "name": "lighthouse-only-scores-svg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lighthouse": "^7.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MangioneAndrea/lighthouse-only-scores-svg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MangioneAndrea/lighthouse-only-scores-svg/issues"
+  },
+  "homepage": "https://github.com/MangioneAndrea/lighthouse-only-scores-svg#readme"
+}
