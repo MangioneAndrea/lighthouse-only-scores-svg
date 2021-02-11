@@ -2,7 +2,7 @@
   "name": "lighthouse-only-scores-svg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "lighthouse": "^7.0.1"
   },

@@ -1,6 +1,6 @@
-const lighthouse = require("lighthouse");
-const fs = require("fs");
-const chromeLauncher = require("chrome-launcher");
+import lighthouse from "lighthouse";
+import fs from "fs";
+import chromeLauncher from "chrome-launcher";
 
 const getLighthouseReport = async (link) => {
   const chrome = await chromeLauncher.launch({ chromeFlags: ["--headless"] });
@@ -139,10 +139,9 @@ const svgTemplate = (scores) => {
 	</svg>`;
 };
 
-function createReport({ url } = {}) {
+export default function createReport({ url } = {}) {
   getLighthouseReport(url).then((res) => {
     const svg = svgTemplate(res);
     fs.writeFileSync("res.svg", svg);
   });
 }
-module.exports = createReport;
